@@ -12,8 +12,8 @@ const USERNAME_KEY="username";
 function handleLoginSubmit(event){
   // const inputValue=loginInput.value;
 event.preventDefault();
-// const username=loginInput.value;
-localStorage.setItem(USERNAME_KEY,username);
+const username=loginInput.value;
+localStorage.setItem(USERNAME_KEY, username);
 loginForm.classList.add(HIDDEN_CLASSNAME)
 paintGreetings(username);
 // greeting.innerText=`Hello ${userName}`;//"Hello "+userName
