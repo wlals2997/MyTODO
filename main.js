@@ -4,13 +4,17 @@
 
 const loginForm=document.querySelector('#login-form');
 const loginInput=document.querySelector("#login-form input")//한줄로
-const link=document.querySelector("a");
+const logoutForm=document.querySelector('#logout-form');
+
+// const link=document.querySelector("a");
 const greeting=document.querySelector("#greeting");
 
 const HIDDEN_CLASSNAME="hidden";
 const USERNAME_KEY="username";
+
 function handleLoginSubmit(event){
   // const inputValue=loginInput.value;
+  
 event.preventDefault();
 const username=loginInput.value;
 localStorage.setItem(USERNAME_KEY, username);
@@ -22,7 +26,13 @@ paintGreetings(username);
 function paintGreetings(username){
   greeting.innerText=`Hello ${username}`;
   greeting.classList.remove(HIDDEN_CLASSNAME);
+  logoutForm.classList.remove(HIDDEN_CLASSNAME);
 }
+function paintLogout(){
+localStorage.removeItem(USERNAME_KEY);
+window.location.reload();
+}
+logoutForm.addEventListener("click",paintLogout);
 // function handleLinkSumbit(event){
   // event.preventDefault();  //기본동작은 막아버림
 //   console.log(event)
@@ -39,3 +49,4 @@ if(savedUserName===null){
  paintGreetings(savedUserName) //localstorage에서 정보를 받아오는것
 
 }
+
