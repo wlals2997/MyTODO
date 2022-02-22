@@ -4,20 +4,64 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>APP</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    
+    <title>TODOLIST</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <div id="weather">
+
+      <span></span>
+      <span></span>
+      <span></span>
+    
+  </div>
+
+    <h2 id="clock">00:00:00</h2>
+
+    <h1 id="day"></h1>
     <form class="hidden" id="login-form">
-      <input required maxlength="15" type="text" placeholder="login" />
+      <input
+        required
+        maxlength="15"
+        type="text"
+        placeholder="write your name"
+      />
       <button>Login</button>
     </form>
-    
     <form class="hidden" id="logout-form">
-    <button>logout</button>    
+      <button>logout</button>
     </form>
+    <!-- clock은 default로 00시00분을 나타내도록 한다 -->
     <h1 id="greeting" class="hidden"></h1>
-    <!-- <a href="https://www.naver.com/">Go to NAVER</a> -->
-    <script src="main.js"></script>
+    <form id="todo-form">
+      <input type="text" placeholder="TODO리스트를 작성하세요." required />
+      <!-- required?i dont want to add an empty to do -->
+    </form>
+    <ul id="todo-list"></ul>
+    <div id="quote">
+      <span></span>
+      <span></span>
+    </div>
+
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+   
   </body>
 </html>
