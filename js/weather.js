@@ -14,6 +14,7 @@ function onGeoSuccess(position) {
       weather.innerHTML = `<img class="weathericons" src="http://openweathermap.org/img/wn/${ data.weather[0].icon}@2x.png"/>`;
       city.innerText = `${data.name}`;
       weatherimg.innerHTML=`${data.weather[0].main}/${parseInt(data.main.temp)}도`
+     
 });
   }
   //실제로 url에 갈 필요없이 자바스크립트가 대신 url을 부른다.
