@@ -26,15 +26,15 @@
 - setInterval 함수를 이용하여 매초마다 getClock이라는 함수를 실행하도록 하였습니다.
 - getDay 메소드를 활용하여 현재 요일을 화면에 나타나도록 하였습니다.
 
-#### 명언, 배경이미지 
+##### 명언, 배경이미지 
 [:pushpin:코드확인(백그라운드)](https://github.com/wlals2997/MyTODO/blob/72cdb8a6fe82436a94177204d3d4d3ca87df55cb/js/background.js#L4)
 [:pushpin:코드확인(명언)](https://github.com/wlals2997/MyTODO/blob/72cdb8a6fe82436a94177204d3d4d3ca87df55cb/js/quotes.js#L43)
 - Math.random과 Math.floor  을 이용하여 랜덤으로 보여지게하였습니다.
-#### 투두리스트 작성 [:pushpin:코드확인](https://github.com/wlals2997/MyTODO/blob/72cdb8a6fe82436a94177204d3d4d3ca87df55cb/js/todo.js#L14)
+##### 투두리스트 작성 [:pushpin:코드확인](https://github.com/wlals2997/MyTODO/blob/72cdb8a6fe82436a94177204d3d4d3ca87df55cb/js/todo.js#L14)
 - input 에 할일을 작성하여 enter을 누르면 form 안에 createElement 메서드를 사용하여 li와 span, 투두리스트 당 삭제 button이 생성되도록 하였습니다.
 - 이름과 마찬가지로 작성한 투두는  Json.stringfy메서드를 사용하여 객체인 투두를  문자열로 변환하여 localstorge에 id(랜덤숫자)와  투두를 저장하도록 하였습니다.
 - 배열에 담긴 투두의 아이디(숫자)와 삭제할 아이디(사용자가 클릭한 아이디)를 fillter함수를 사용하여 삭제하도록 하였습니다.
-#### 현재 위치 기준 날씨 알림 [:pushpin:코드확인](https://github.com/wlals2997/MyTODO/blob/72cdb8a6fe82436a94177204d3d4d3ca87df55cb/js/weather.js#L3)
+##### 현재 위치 기준 날씨 알림 [:pushpin:코드확인](https://github.com/wlals2997/MyTODO/blob/72cdb8a6fe82436a94177204d3d4d3ca87df55cb/js/weather.js#L3)
 - openWeatherMap API 를 받아와 위치, 날씨, 온도 아이콘을 받아 오도록 하였습니다.
 
 
