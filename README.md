@@ -1,6 +1,6 @@
 #  :pushpin: Todolist by Vanilla JS
 > 순수 자바스크립트로 만든 투두리스트 크롬 앱 입니다.
-> 👉🏼[웹페이지 링크](https://wlals2997.github.io/MyTODO/)
+> 👉🏼[웹페이지 링크](https://wlals2997.github.io/mytodo/)
 
 ## 1. 제작 기간 & 참여 인원
 - 2021년 10월 21일 ~ 2022 11월 5일
